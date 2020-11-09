@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.mapper.UserMapper">
+    <select id="selectUserByName" resultType="map">
+        SELECT ID as "id",USER_NAME as "userName",PASS_WORD as "passWord",AGE as  "age", HEAD_PORTRAIT as "headPortrait",EMAIL as "email", to_char(CREATE_TIME,'yyyy-MM-dd hh24:mi:ss') as "createTime" from sys_User where user_Name =#{userName}and IS_DELETED = '0'
+    </select>
+    <select id="selectUserCount" resultType="long">
+        select count(1) from sys_User
+    </select>
+</mapper>

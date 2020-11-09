@@ -1,0 +1,71 @@
+/*最大的div*/
+.loginForm{
+    width: 630px;
+    height: 373px;
+    margin-left: 658px;
+    margin-top: 62px;
+    border: 10px;
+    background-color: white;
+    border-radius: 5px;/*div四角据中*/
+    /*text-align: center;!*(让div中的内容居中)*!*/
+}
+/*登录表单*/
+.loginDiv{
+    width: 50%;
+    height: 100%;
+    float: right;
+/*    padding-top: 1px;
+    padding-left: 36px;*/
+}
+/*登录表单旁边的图片*/
+.loginLeftDiv{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+/*用户名和密码input*/
+.loginDivOnlyCenter{
+    margin-left: 11%;
+    margin-top: 5%;
+}
+/*登录按钮*/
+.loginButton{
+    width: 248px;
+    height: 30px;
+    background-color: #9fc1ef;
+    margin-top: 38px;
+    color: cadetblue;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+/*注册按钮*/
+.registerButton{
+    border: 0px;
+    outline: none;
+    background-color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+/*七天免登录选择框*/
+.checkbox{
+    font-size: 10px;
+}
+/*版权Div*/
+.copyrightDiv{
+    margin-top: 6%;
+    background-color: white;
+}
+/*项目名称*/
+.projectDiv{
+    margin-left: 60px;
+    margin-top: 0px;
+    font-size: 40px;
+    color: pink;
+}
+/*登录错误提示*/
+.errorInfor{
+    color: red;
+    font-size: 10px;
+    margin-left: 200px;
+}

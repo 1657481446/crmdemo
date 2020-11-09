@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.mapper.SysMapper">
+    <insert id="insertSysLog" parameterType="com.springboot.entity.SysLoginLog">
+        insert into SYS_LOGIN_LOG (ID,LOGIN_NAME,LOGIN_ID,CLIENT_IP,CREATE_TIME,IS_DELETED,LOGIN_RESULT)
+         values (#{id},#{loginName},#{loginId},#{clientIp},#{createTime},#{isDeleted},#{loginResult})
+    </insert>
+    <select id="selectLoginLog" resultType="map">
+        select ID as "id",LOGIN_NAME as "loginName",LOGIN_ID as "loginId",CLIENT_IP as "clientIp",to_char(CREATE_TIME,'yyyy-MM-dd hh24:mi:ss') as "createTime",IS_DELETED as "isDeleted",LOGIN_RESULT as "loginResult" from SYS_LOGIN_LOG where IS_DELETED = '0' order by CREATE_TIME
+    </select>
+</mapper>

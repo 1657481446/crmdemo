@@ -1,0 +1,21 @@
+.homeDiv{
+    margin-left: 100px;
+    margin-top: -8px;
+    width: 85%;
+    height: 100%;
+    background-color: white;
+    opacity:0.5
+}
+.body{
+    /*background-image: url("../../../images/business/shouye/backgroud.jpg");*/
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow:hidden
+}

@@ -1,0 +1,181 @@
+.textLineDiv{
+    width: 495px;
+    height: 60px;
+    line-height: 66px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #c2c9d2;
+    margin: 0 auto;
+    position: relative;
+    left: 26px;
+}
+.textLineSpan{
+    display: inline-block;
+    text-indent: 2px;
+    vertical-align: middle;
+}
+.textLineNumber{
+    font-size: 20px;
+    color: #afb6c0;
+}
+.textLineSpanSun{
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 2px;
+}
+.registerHead{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    z-index: 10;
+    font-family: "微软雅黑";
+    box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+    /*
+    background-image: linear-gradient(to right,lightcoral,pink);
+    */
+    background-image: linear-gradient(to right,pink,lightcoral);
+}
+.spanBoundary{
+    width: 1px;
+    height: 15px;
+    background: #d5deee;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+.registerDiv{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    position: relative;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 9px 0 rgba(92,128,255,0.17);
+}
+.maxDiv{
+    width: 830px;
+    margin: 0 auto;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+.topRegisterDiv{
+    border-radius: 2px;
+    padding-bottom: 5px;
+    top: 5px;
+    width: 100%;
+    background-color: goldenrod;
+}
+.tips{
+    width: 100%;
+    height: 20%;
+}
+.tipTriangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-width: 4px;
+    border-style: solid dashed dashed;
+    border-color: transparent transparent #dddfe3 transparent;
+    top: 13px;
+    left: 260px;
+    right: 0;
+    margin: auto;
+    display: block;
+    transform: rotate(90deg);
+}
+.tipTriangle2{
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-width: 4px;
+    border-style: solid dashed dashed;
+    border-color: transparent transparent #fff transparent;
+    top: 13px;
+    left: 255px;
+    right: 0;
+    margin: auto;
+    display: block;
+    transform: rotate(90deg);
+}
+.userInput{
+    width: 36%;
+    height: 10%;
+    margin-left: 315px;
+    margin-top: 10px;
+}
+.registerForm{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid lightpink;
+    font-size: 14px;
+}
+.content{
+    width: 100%;
+    height: 70%;
+    margin-top: 100px;
+}
+.label{
+    width: 32%;
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    color: #738299;
+    padding-right: 16px;
+    margin-bottom: 4px;
+}
+.inputDiv{
+    height: 30%;
+    width: 100%;
+    background-color: #9fc1ef;
+}
+.nameDiv{
+    position: relative;
+    margin-top: 18px;
+    width: 328px;
+    height: 46px;
+    line-height: 44px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgba(227,232,240,1);
+    border-radius: 23px;
+    box-sizing: border-box;
+    font-size: 0;
+    margin-left: 250px;
+}
+.nameInput{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-radius: 23px;
+    background-color: #fff;
+    color: #3a405b;
+    font-size: 14px;
+}
+.regBtn{
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    background-color: #0075ff;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+.error_tip{
+    width: 100%;
+    height: 1%;
+    margin-left: 488px;
+    font-size: 10px
+}

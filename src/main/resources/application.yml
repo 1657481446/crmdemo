@@ -1,0 +1,30 @@
+#application.yml
+#数据库配置信息
+spring:
+  datasource:
+    username: springboot
+    password: 111111
+    url: jdbc:oracle:thin:@localhost:1521/ORCLpdb
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  #视图解析器
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+#热部署
+  devtools:
+    restart:
+      enabled: true
+
+#端口
+server:
+  port: 8011
+
+#mybatis配置信息
+mybatis-plus:
+  type-aliases-package: com.springboot.entity
+  mapper-locations: classpath*:mapper/*Mapper.xml
+#所有参数的配置（这里配置完之后需要ParameterConfiguration类中加入对于的变量）
+parameter-configuration:
+    uploadPicturePath: http://192.168.1.240:8091/crmdemo/uploadPictuer
+    headPortrait: http://192.168.1.240:8011/uploadPicture/111.jpg
